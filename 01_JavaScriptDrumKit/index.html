@@ -64,7 +64,7 @@
             const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
 
             if (!audio) return; // stop the function.
-            audio.currntTime = 0;
+            audio.currntTime = 0;  // rewind to the start 
             audio.play();
             key.classList.add('playing');
         }
